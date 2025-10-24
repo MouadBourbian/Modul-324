@@ -4,7 +4,7 @@
 
 ## Projekt: Ticketsystem
 
-Wir entwickeln ein **Ticketsystem** basierend auf **Spring Boot** als Backend und **MongoDB** als Datenbank.
+Wir entwickeln ein **Ticketsystem** basierend auf **Express.js** als Backend und **MongoDB** als Datenbank.
 Das Projekt wird als Web-API umgesetzt, jede User Story beschreibt einen eigenen Endpoint.  
 Ein Frontend wird nicht implementiert.
 
@@ -12,6 +12,7 @@ Ein Frontend wird nicht implementiert.
 
 ## Ordnerstruktur
 
+- [ticketsystem/backend](./ticketsystem/backend/) – **Hauptprojekt**: Express.js Backend-Anwendung
 - [Code](./Code/) – Quellcode des Projekts
 - [Dokumentation](./Dokumentation/) – Markdown-Dokumente zur Projekt- und Theorie-Dokumentation
 - [Theorie](./Theorie/) – Theorieblöcke und Lerninhalte
@@ -21,10 +22,10 @@ Ein Frontend wird nicht implementiert.
 
 ## Projekt/Technologie Entscheidung
 
-- **Programmiersprache:** Java
-- **Framework:** Spring Boot (REST API, Security, Tests)
-- **Datenbank:** MongoDB (Cloud: Atlas / lokal: Docker-Image)
-- **Tests:** JUnit & Spring Test
+- **Programmiersprache:** JavaScript (Node.js)
+- **Framework:** Express.js (REST API mit Helmet Security & Morgan Logging)
+- **Datenbank:** MongoDB mit Mongoose (Cloud: Atlas / lokal: Docker-Image)
+- **Tests:** Jest & Supertest
 
 ---
 
