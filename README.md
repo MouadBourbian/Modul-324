@@ -1,5 +1,7 @@
 # Projekt Setup und Infrastruktur
 
+![CI Pipeline](https://github.com/MouadBourbian/Modul-324/workflows/CI%20Pipeline/badge.svg)
+
 ## Projekt: Ticketsystem
 
 Wir entwickeln ein **Ticketsystem** basierend auf **Spring Boot** als Backend und **MongoDB** als Datenbank.
@@ -35,6 +37,10 @@ Ein Frontend wird nicht implementiert.
 **CI/CD Prozesse**
 
 - GitHub Actions (Build, Tests, Deployment)
+- ✅ **Linting**: ESLint für Code-Qualität und Stil
+- ✅ **Testing**: Jest mit MongoDB Service Container
+- 📝 **Deployment**: Geplant für zukünftige Implementierung
+- 📖 Setup-Anleitung: Siehe [SETUP_INSTRUCTIONS.md](./SETUP_INSTRUCTIONS.md)
 
 **Kanban Board**
 
