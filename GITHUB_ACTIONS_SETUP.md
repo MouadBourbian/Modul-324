@@ -81,7 +81,11 @@ If you haven't set up MongoDB Atlas yet:
    - Go to **Network Access**
    - Click **Add IP Address**
    - Click **Allow Access from Anywhere** (0.0.0.0/0)
-   - Note: For production, restrict this to specific IPs
+   - ⚠️ **Security Warning**: Allowing access from anywhere is not recommended for production
+   - For better security, consider:
+     - Using MongoDB Atlas's built-in VPC peering
+     - Restricting to specific IP ranges
+     - Using temporary credentials with IP restrictions
 
 4. **Create Database User**
    - Go to **Database Access**
@@ -181,7 +185,10 @@ npm start
 - Verify MongoDB Atlas network access allows GitHub Actions IPs
 - Check that the connection string is correct
 - Ensure the database user has proper permissions
-- Try setting Network Access to "Allow Access from Anywhere" (0.0.0.0/0)
+- ⚠️ **Last Resort Only**: As a temporary debugging step, you can try setting Network Access to "Allow Access from Anywhere" (0.0.0.0/0)
+  - This poses a security risk and should only be used temporarily
+  - Make sure to restrict access again once debugging is complete
+  - Never use this configuration in production without proper security measures
 
 ### Linting Fails
 - Run `npm run lint` locally to see errors
